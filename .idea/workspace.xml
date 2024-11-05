@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f646ca63-5aae-46f6-ad4a-309c708433b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/asteroidfield.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asteroid.py" beforeDir="false" afterPath="$PROJECT_DIR$/asteroid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/circleshape.py" beforeDir="false" afterPath="$PROJECT_DIR$/circleshape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,8 @@
       <workItem from="1730455206205" duration="4472000" />
       <workItem from="1730543991808" duration="6150000" />
       <workItem from="1730645622226" duration="2347000" />
-      <workItem from="1730742786356" duration="3518000" />
+      <workItem from="1730742786356" duration="4521000" />
+      <workItem from="1730833857124" duration="4499000" />
     </task>
     <servers />
   </component>
@@ -77,6 +78,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/asteroids$main.coverage" NAME="main Coverage Results" MODIFIED="1730660881870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/asteroids$main.coverage" NAME="main Coverage Results" MODIFIED="1730838355377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

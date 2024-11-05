@@ -1,12 +1,13 @@
 import pygame
-
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
 from constants import *
 from player import Player
+import time, sys
 
 def main():
     pygame.init()
+    pygame.display.set_caption("Asteroid")
     clock = pygame.time.Clock()
     dt = 0
     updatable = pygame.sprite.Group()
@@ -16,13 +17,28 @@ def main():
     Asteroid.containers = (asteroids, updatable, drawable)
     AsteroidField.containers = updatable
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-    Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
+    x, y = SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2
+    font = pygame.font.SysFont("Arial", 30)
+    player = Player(x, y)
     AsteroidField()
 
     while True:
         screen.fill(000000)
         for thing in updatable:
             thing.update(dt)
+        for asteroid in asteroids:
+             if asteroid.check_collision(player):
+                pygame.display.flip()
+                screen.fill(000000)
+                print("Game Over!")
+                text = font.render("GAME OVER", True, "red")
+                text_rect = text.get_rect()
+                text_rect.center = (x, y)
+                screen.blit(text, text_rect)
+                pygame.display.flip()
+                time.sleep(1)
+                sys.exit()
+
         for thing in drawable:
             thing.draw(screen)
         pygame.display.flip()
